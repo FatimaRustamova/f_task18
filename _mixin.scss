@@ -1,0 +1,62 @@
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 32px;
+}
+
+@mixin section {
+    width: 100%;
+    padding: 80px 0;
+}
+
+@mixin before {
+    width: 30px;
+    height: 1px;
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+@mixin p-tag {
+    font-family: $font-family2; 
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-left: 40px;
+    letter-spacing: 2px;
+}
+
+@mixin h2-tag {
+    font-family: $font-family1;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+@mixin gap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+@mixin input {
+    width: 47%;
+    height: 50px;
+    border: 1px solid $color6;
+    border-radius: 5px;
+    font-family: $font-family2;
+    padding-left: 15px;
+    font-size: 14px;
+    color: $color7;
+}

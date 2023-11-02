@@ -1,0 +1,512 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section1 {
+  width: 100%;
+  padding: 80px 0;
+  background-color: #fffafa;
+}
+.section1 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.section1 .container .menu {
+  width: 35%;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  gap: 10px;
+}
+.section1 .container .menu p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  letter-spacing: 2px;
+  color: #fb5849;
+}
+.section1 .container .menu p::before {
+  width: 30px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #fb5849;
+}
+.section1 .container .menu h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: #2a2a2a;
+}
+.section1 .cup {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+}
+.section1 .cup .cakes {
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section1 .cup .cakes .taste {
+  width: 18%;
+  min-height: 400px;
+  position: relative;
+}
+.section1 .cup .cakes .taste .cake {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fb5849;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 1px;
+}
+.section1 .cup .cakes .taste img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section1 .cup .cakes .taste .klassic {
+  width: 100%;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fb5849;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.section2 {
+  width: 100%;
+  padding: 80px 0;
+}
+.section2 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.section2 .container .about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 .container .about .memory {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  position: relative;
+}
+.section2 .container .about .memory #p1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  letter-spacing: 2px;
+  color: #fb5849;
+}
+.section2 .container .about .memory #p1::before {
+  width: 30px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: #fb5849;
+}
+.section2 .container .about .memory h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 150px;
+  color: #2a2a2a;
+}
+.section2 .container .about .memory #p2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.section2 .container .about .memory #p2 a {
+  text-decoration: none;
+  color: #007bff;
+}
+.section2 .container .about .memory #p2 a:hover {
+  color: #2c4e72;
+}
+.section2 .container .about .memory .pictures {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section2 .container .about .memory .pictures div {
+  width: 32%;
+}
+.section2 .container .about .memory .pictures div img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section2 .container .about .video {
+  width: 47%;
+  position: relative;
+}
+.section2 .container .about .video img {
+  width: 100%;
+}
+.section2 .container .about .video div {
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #fb5849;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+.section2 .container .about .video div:hover {
+  background-color: rgba(251, 88, 73, 0.9);
+  cursor: pointer;
+}
+.section2 .container .about .video div i {
+  color: white;
+  font-size: 20px;
+}
+
+.section3 {
+  width: 100%;
+  padding: 80px 0;
+  background-image: url("https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg");
+  background-size: cover;
+}
+.section3 .container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+}
+.section3 .container .contact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section3 .container .contact .reserv {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.section3 .container .contact .reserv #p1 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-left: 40px;
+  letter-spacing: 2px;
+  color: white;
+}
+.section3 .container .contact .reserv #p1::before {
+  width: 30px;
+  height: 1px;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  background-color: white;
+}
+.section3 .container .contact .reserv h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+}
+.section3 .container .contact .reserv #p2 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+.section3 .container .contact .reserv .number {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section3 .container .contact .reserv .number .phone {
+  width: 47%;
+  min-height: 160px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section3 .container .contact .reserv .number .phone .mail {
+  position: absolute;
+  top: -30px;
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #fb5849;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .container .contact .reserv .number .phone .mail i {
+  color: white;
+  font-size: 25px;
+}
+.section3 .container .contact .reserv .number .phone h3 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-top: 25px;
+  color: #2a2a2a;
+}
+.section3 .container .contact .reserv .number .phone p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 15px;
+  padding: 0 70px;
+  color: #2a2a2a;
+}
+.section3 .container .contact .table {
+  width: 45%;
+  padding: 50px 0;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 .container .contact .table .time {
+  width: 85%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+.section3 .container .contact .table .time h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.section3 .container .contact .table .time div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+.section3 .container .contact .table .time div input {
+  width: 47%;
+  height: 50px;
+  border: 1px solid rgb(207, 201, 201);
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 15px;
+  font-size: 14px;
+  color: gray;
+}
+.section3 .container .contact .table .time div select {
+  width: 47%;
+  height: 50px;
+  border: 1px solid rgb(207, 201, 201);
+  border-radius: 5px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 15px;
+  font-size: 14px;
+  color: gray;
+}
+.section3 .container .contact .table .time textarea {
+  width: 100%;
+  height: 150px;
+  border: 1px solid rgb(207, 201, 201);
+  border-radius: 5px;
+  padding-top: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-left: 15px;
+  font-size: 14px;
+  color: gray;
+}
+.section3 .container .contact .table .time button {
+  width: 100%;
+  height: 50px;
+  background-color: #fb5849;
+  border: 1px solid #fb5849;
+  border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  transition: all 0.4s ease;
+}
+.section3 .container .contact .table .time button:hover {
+  background-color: rgba(251, 88, 73, 0.9);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .section1 .container {
+    padding: 0 120px;
+  }
+  .section1 .container .menu {
+    width: 100%;
+  }
+  .section1 .cup .cakes {
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  .section1 .cup .cakes .taste {
+    width: 47%;
+  }
+  .section2 .container {
+    padding: 0 40px;
+  }
+  .section2 .container .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section2 .container .about .memory {
+    width: 100%;
+  }
+  .section2 .container .about .video {
+    width: 100%;
+  }
+  .section3 .container {
+    padding: 0 40px;
+  }
+  .section3 .container .contact {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section3 .container .contact .reserv {
+    width: 75%;
+  }
+  .section3 .container .contact .reserv .number {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section3 .container .contact .reserv .number .phone {
+    width: 100%;
+  }
+  .section3 .container .contact .reserv .number .phone .mail {
+    left: 43%;
+  }
+  .section3 .container .contact .table {
+    width: 75%;
+  }
+  .section3 .container .contact .table .time {
+    width: 85%;
+  }
+  .section3 .container .contact .table .time div {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section3 .container .contact .table .time div input {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time div select {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time textarea {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time button {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .section1 .container {
+    padding: 0 25px;
+  }
+  .section1 .container .menu {
+    width: 100%;
+  }
+  .section1 .cup .cakes {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section1 .cup .cakes .taste {
+    width: 95%;
+  }
+  .section2 .container {
+    padding: 0 20px;
+  }
+  .section2 .container .about {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section2 .container .about .memory {
+    width: 100%;
+  }
+  .section2 .container .about .video {
+    width: 100%;
+  }
+  .section3 .container {
+    padding: 0 15px;
+  }
+  .section3 .container .contact {
+    width: 100%;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .section3 .container .contact .reserv {
+    width: 100%;
+  }
+  .section3 .container .contact .reserv .number {
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .section3 .container .contact .reserv .number .phone {
+    width: 100%;
+  }
+  .section3 .container .contact .reserv .number .phone .mail {
+    left: 45%;
+  }
+  .section3 .container .contact .table {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time {
+    width: 90%;
+  }
+  .section3 .container .contact .table .time div {
+    width: 100%;
+    flex-direction: column;
+  }
+  .section3 .container .contact .table .time div input {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time div select {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time textarea {
+    width: 100%;
+  }
+  .section3 .container .contact .table .time button {
+    width: 100%;
+  }
+}/*# sourceMappingURL=style.css.map */

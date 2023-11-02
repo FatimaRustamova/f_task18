@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.section1{
+    @include section;
+    background-color: #fffafa;
+    .container{
+        @include container;
+        .menu{
+            width: 35%;
+            display: flex;
+            justify-content: flex-start;
+            flex-direction: column;
+            position: relative;
+            gap: 10px;
+            p{
+                @include p-tag;
+                color: $color2;
+                &::before{
+                    @include before;
+                    background-color: $color2;
+                }
+            }
+            h2{
+                @include h2-tag;
+                color: $color3;
+            }
+        }
+    }
+    .cup{
+        width: 100%;
+        @include center;
+        margin-top: 70px;
+        .cakes{
+            width: 95%;
+            @include flex;
+            .taste{
+                width: 18%;
+                min-height: 400px;
+                position: relative;
+                .cake{
+                    width: 70px;
+                    height: 70px ;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-color: $color2;
+                    font-family: $font-family1;
+                    @include center;
+                    font-size: 20px;
+                    color: $color1;
+                    letter-spacing: 1px;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .klassic{
+                    width: 100%;
+                    height: 50px;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    background-color: $color2;
+                    font-family: $font-family2;
+                    font-weight: bold;
+                    color: $color1;
+                    font-size: 19px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-end;
+                }
+            }
+        }
+    }
+}
+.section2{
+    @include section;
+    .container{
+        @include container;
+        .about{
+            @include flex;
+            .memory{
+                width: 47%;
+                @include gap;
+                position: relative;
+                #p1{
+                    @include p-tag;
+                    color: $color2;
+                    &::before{
+                        @include before;
+                        background-color: $color2;
+                    }
+                }
+                h2{
+                    @include h2-tag;
+                    padding-right: 150px;
+                    color: $color3;
+                }
+                #p2{
+                    font-family: $font-family3;
+                    a{
+                        text-decoration: none;
+                        color: $color4;
+                        &:hover{
+                            color: $color5;
+                        }
+                    }
+                }
+                .pictures{
+                    width: 100%;
+                    @include flex;
+                    div{
+                        width: 32%;
+                        img{
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+            .video{
+                width: 47%;
+                position: relative;
+                img{
+                    width: 100%;
+                }
+                div{
+                    position: absolute;
+                    top: 40%;
+                    left: 45%;
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 100%;
+                    background-color: $color2;
+                    @include center;
+                    transition: all .4s ease;
+                    &:hover{
+                        background-color: rgba($color: $color2, $alpha: 0.9);
+                        cursor: pointer;
+                    }
+                    i{
+                        color: $color1;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+}
+.section3{
+    @include section;
+    background-image: url("https://templatemo.com/templates/templatemo_558_klassy_cafe/assets/images/reservation-bg.jpg");
+    background-size: cover;
+    .container{
+        @include container;
+        .contact{
+            @include flex;
+            .reserv{
+                width: 47%;
+                @include gap;
+                #p1{
+                    @include p-tag;
+                    color: $color1;
+                    &::before{
+                        @include before;
+                        background-color: $color1;
+                    }
+                }
+                h2{
+                    @include h2-tag;
+                    color: $color1;
+                }
+                #p2{
+                    font-family: $font-family3;
+                    color: $color1;
+                }
+                .number{
+                    @include flex;
+                    .phone{
+                        width: 47%;
+                        min-height: 160px;
+                        background-color: $color1;
+                        border-radius: 10px;
+                        position: relative;
+                        margin-top: 30px;
+                        @include center;
+                        flex-direction: column;
+                        .mail{
+                            position: absolute;
+                            top: -30px;
+                            left: 35%;
+                            width: 70px;
+                            height: 70px;
+                            border-radius: 100%;
+                            background-color: $color2;
+                            @include center;
+                            i{
+                                color: $color1;
+                                font-size: 25px;
+                            }
+                        }
+                        h3{
+                            font-family: $font-family2;
+                            margin-top: 25px;
+                            color: $color3;
+                        }
+                        p{
+                            font-family: $font-family3;
+                            margin-top: 15px;
+                            padding: 0 70px;
+                            color: $color3;
+                        }
+                    }
+                }
+            }
+            .table{
+                width: 45%;
+                padding: 50px 0;
+                background-color: $color1;
+                border-radius: 10px;
+                @include center;
+                .time{
+                    width: 85%;
+                    @include flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    h2{
+                        @include h2-tag;
+                    }
+                    div{
+                        display: flex;
+                        flex-wrap: wrap;
+                        justify-content: space-between;
+                        gap: 20px;
+                        input{
+                            @include input;
+                        }
+                        select{
+                            @include input;
+                        }
+                    }
+                    textarea{
+                        width: 100%;
+                        height: 150px;
+                        border: 1px solid $color6;
+                        border-radius: 5px;
+                        padding-top: 10px;
+                        font-family: $font-family2;
+                        padding-left: 15px;
+                        font-size: 14px;
+                        color: $color7;
+                    }
+                    button{
+                        width: 100%;
+                        height: 50px;
+                        background-color: $color2;
+                        border: 1px solid $color2;
+                        border-radius: 5px;
+                        font-family: $font-family3;
+                        font-size: 15px;
+                        font-weight: bold;
+                        color: $color1;
+                        transition: all .4s ease;
+                        &:hover{
+                            background-color: rgba($color: $color2, $alpha: 0.9);
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+    .section1{
+        .container{
+            padding: 0 120px;
+            .menu{
+                width: 100%;
+            }
+        }
+        .cup{
+            .cakes{
+                flex-wrap: wrap;
+                gap: 30px;
+                .taste{
+                    width: 47%;
+                }
+            }
+        }
+    }
+    .section2{
+        .container{
+            padding: 0 40px;
+            .about{
+                flex-direction: column;
+                gap: 30px;
+                .memory{
+                    width: 100%;
+                }
+                .video{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .section3{
+        .container{
+            padding: 0 40px;
+            .contact{
+                width: 100%;
+                flex-direction: column;
+                gap: 30px;
+                .reserv{
+                    width: 75%;
+                    .number{
+                        width: 100%;
+                        flex-direction: column;
+                        .phone{
+                            width: 100%;
+                            .mail{
+                                left: 43%;
+                            }
+                        }
+                    }
+                }
+                .table{
+                    width: 75%;
+                    .time{
+                        width: 85%;
+                        div{
+                            width: 100%;
+                            flex-direction: column;
+                            input{
+                                width: 100%;
+                            }
+                            select{
+                                width: 100%;
+                            }
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    .section1{
+        .container{
+            padding: 0 25px;
+            .menu{
+                width: 100%;
+            }
+        }
+        .cup{
+            .cakes{
+                flex-direction: column;
+                gap: 30px;
+                .taste{
+                    width: 95%;
+                }
+            }
+        }
+    }
+    .section2{
+        .container{
+            padding: 0 20px;
+            .about{
+                flex-direction: column;
+                gap: 30px;
+                .memory{
+                    width: 100%;
+                }
+                .video{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .section3{
+        .container{
+            padding: 0 15px;
+            .contact{
+                width: 100%;
+                flex-direction: column;
+                gap: 30px;
+                .reserv{
+                    width: 100%;
+                    .number{
+                        width: 100%;
+                        flex-direction: column;
+                        gap: 20px;
+                        .phone{
+                            width: 100%;
+                            .mail{
+                                left: 45%;
+                            }
+                        }
+                    }
+                }
+                .table{
+                    width: 100%;
+                    .time{
+                        width: 90%;
+                        div{
+                            width: 100%;
+                            flex-direction: column;
+                            input{
+                                width: 100%;
+                            }
+                            select{
+                                width: 100%;
+                            }
+                        }
+                        textarea{
+                            width: 100%;
+                        }
+                        button{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
